@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/pgeltman/neural-network-excercise/issues"
   },
-  "homepage": "https://github.com/pgeltman/neural-network-excercise#readme"
+  "homepage": "https://github.com/pgeltman/neural-network-excercise#readme",
+  "dependencies": {
+    "@types/node": "^12.0.8",
+    "chalk": "^2.4.2"
+  }
 }
