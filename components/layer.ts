@@ -1,5 +1,5 @@
 import Neuron from './neuron';
-import cli from '../philsCLI';
+import cli from 'philsCLI';
 
 export default class Layer {
   constructor() {

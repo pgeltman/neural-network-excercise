@@ -20,6 +20,7 @@
   "homepage": "https://github.com/pgeltman/neural-network-excercise#readme",
   "dependencies": {
     "@types/node": "^12.0.8",
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "philscli": "^1.0.0"
   }
 }

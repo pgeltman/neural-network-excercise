@@ -1,4 +1,4 @@
-import cli from '../philsCLI';
+import cli from 'philsCLI';
 
 export default class Neuron {
   constructor() {

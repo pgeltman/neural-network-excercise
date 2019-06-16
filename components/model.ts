@@ -1,5 +1,5 @@
 import Layer from './layer';
-import cli from '../philsCLI';
+import cli from 'philsCLI';
 
 export default class Model {
   name: string;
