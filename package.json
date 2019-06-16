@@ -1,0 +1,21 @@
+{
+  "name": "neural-network-excercise",
+  "version": "1.0.0",
+  "description": "Trying to build a simple neural-network from scratch so I can learn the principals of how they work",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgeltman/neural-network-excercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgeltman/neural-network-excercise/issues"
+  },
+  "homepage": "https://github.com/pgeltman/neural-network-excercise#readme"
+}
