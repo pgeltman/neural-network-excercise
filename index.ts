@@ -1,11 +1,6 @@
 //neural network excercise
 import cli from 'philsCLI';
-import Model from './components/model';
+import state from './models/m0/state';
+import Model from './models/m0/model';
 
-cli.addCommand('new', name => {
-  let moddy = new Model(name);
-});
-
-cli.addCommand('model', () => {});
-
-cli.start("Phil's Machine Learning Tool");
+let m = new Model(state.weightsAndBiases);
