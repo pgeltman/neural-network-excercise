@@ -1,13 +1,13 @@
 import Layer from '../components/layer';
-import cli from 'philsCLI';
 
 export default class Model {
-  hl: object;
-
-  constructor(weightsAndBiases) {
-    this.hl = new Layer(weightsAndBiases.hl);
+  constructor(wab) {
+    //generates a layer for each layer in the state
+    Object.keys(wab).forEach(l => {
+      this[l] = new Layer(wab[l]);
+    });
   }
   run(i: object) {
-    //return this.weightsAndBiases;
+    return this['out'].run(i);
   }
 }

@@ -1,25 +1,20 @@
 import cli from 'philsCLI';
 
 export default class Neuron {
-  weights: Array<number> = [0, 0, 0];
-  bias: number;
+  w: Array<number> = [0, 0, 0];
+  b: number;
   maxAct: number;
   minAct: number;
 
   constructor(weights: Array<number>, bias?: number) {
-    this.weights = weights;
-    this.bias = bias || 0;
-    this.maxAct = this.getMaxAct();
+    this.w = weights;
+    this.b = bias || 0;
   }
-  run(activations: Array<number>) {
-    let aggregate = [];
-    for (let a in activations) {
-      aggregate.push(activations[a] * this.weights[a]);
+  run(acts: Array<number>) {
+    let res = [];
+    for (let a in acts) {
+      res.push(acts[a] * this.w[a]);
     }
-    cli.json(aggregate);
-    return 1;
-  }
-  getMaxAct() {
-    return 1;
+    return res;
   }
 }
