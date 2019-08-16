@@ -8,6 +8,7 @@ export default class Layer {
     });
   }
   run(i: object) {
+    //wrapper array
     let res = [];
 
     Object.keys(this).forEach(n => {
